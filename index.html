@@ -10,21 +10,27 @@
 </head>
 <body>
 
-<header class="header">
+<header class="header" id="header">
     <div id="header__image">
 <!---------------------------------------->
         <div class="header__navbar">
 
             <div class="header__container__navbar">
                 <div class="header__logo">
-                    <p>APP<span>KIT</span></p>
+                    <div class="header__icon">
+                        <a href="#"><img src="../images/logo-icon.svg" alt="logo"></a>
+                    </div>
+                    <a href="#"><p>APP<span>KIT</span></p></a>
+
+
                 </div>
 
                 <nav class="navbar" id="navbar">
+<!--                    TODO: Доделать якорные ссылки-->
                     <ul>
                         <li><a href="#About_US" class="navbar_link">About</a></li>
                         <li><a href="#Testimonials" class="navbar_link">Testimonials</a></li>
-                        <li><a href="#" class="navbar_link">Features</a></li>
+                        <li><a href="#features" class="navbar_link">Features</a></li>
                         <li><a href="#" class="navbar_link">Team</a></li>
                         <li><a href="#" class="navbar_link">Pricing</a></li>
                         <li><a href="#" class="navbar_link">Contact</a></li>
@@ -37,7 +43,7 @@
         <div class="container__left">
             <span id="header__MainText"></span>
             <p id="header__text"></p>
-            <a href="#" id="container__leftButton"></a>
+            <a href="#" id="container__leftButton" target="_blank"></a>
         </div>
 
         <div class="container__right"></div>
@@ -52,8 +58,8 @@
 
 <main class="main">
 
-    <div class="about__container">
-        <h2 class="about__container__title" id="About_US"> Why Use AppKit?</h2>
+    <div class="about__container" id="About_US">
+        <h2 class="about__container__title"> Why Use AppKit?</h2>
         <p class="about__container__text">Appkit uses modern front-end technologies and is packed with useful components
                                         and widgets to<br>speed up your app development</p>
         <ol class="about__container__list">
@@ -90,7 +96,7 @@
             </div>
         </div>
     </div>
-
+<!--    ---------------------Testimonials-->
     <div class="testimonials__container" id="Testimonials">
 
         <div class="testimonials__section">
@@ -98,7 +104,7 @@
 
             <div class="testimonials__section__content">
                 <img src="images/profile-1.png" class="testimonials__profileImage" alt="">
-                <blockquote class="quote">
+            <blockquote class="quote">
                     <p class="testimonials__text">Testimonial goes here Donec felis odio, sagittis eu cursus ac,
                         porttitor eu purus. In a bibendum dui. Nullam id est sed felis rutrum tincidunt eu nec nisi
                         morbi euismod semper neque sed lobortis.</p>
@@ -140,12 +146,13 @@
         </div>
 
     </div>
-
+<!--    -------------------------features-->
     <div class="features__container" id="features">
         <div class="features__section">
             <h2 class="features__section__title">Discover Features</h2>
             <p class="features__section__intro">AppKit comes with an AngularJS version, 4 colour schemes and 100+ components</p>
 
+<!--            TODO: Не доделал блок-->
             <div class="features__section__block">
                 <div class="features__section__blockImages" id = "features__section__blockImages">
                     <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm"
@@ -171,9 +178,133 @@
             </div>
         </div>
     </div>
+<!--    -------------------------Our Team-->
+    <div class="ourTeam__container" id="ourTeam">
+        <div class="ourTeam">
+            <div class="ourTeam__header">
+                <h2 class="ourTeam__title">Our Team</h2>
+                <p class="ourteam__intro">See who are behind AppKit</p>
+                <p class="ourTeam__text">AppKit is created by<wbr> Xiaoying<wbr> Riley<wbr> and<wbr> Tomasz<wbr> Najdek.<wbr>
+                    Xiaoying<wbr> and<wbr> Tom<wbr> got<wbr> to<wbr> know<wbr> each<wbr> other<wbr> while<wbr> working<wbr>
+                    as<br> freelancers<wbr> on<wbr> Google<wbr> projects<wbr> and<wbr> became<wbr> good<wbr> friends.<wbr>
+                    They<wbr> firmly<wbr> believe<wbr> with<wbr> the<wbr> right<wbr> resource,<wbr> solopreneurs<wbr> and<br>
+                    small<wbr> teams<wbr> can<wbr> execute<wbr> beautiful<wbr> products<wbr> too.<wbr> Thus<wbr> they<wbr> made<wbr>
+                    AppKit<wbr> to<wbr> help<wbr> developers<wbr> and<wbr> startups<wbr> make<br> outstanding<wbr> products -
+                    <wbr>the<wbr> internet<wbr> has<wbr> made<wbr> it<wbr> possible<wbr> for<wbr> the<wbr> "small<wbr> guys"
+                    <wbr> to<wbr> compete<wbr> directly<wbr> with<wbr> the "big guys".</p>
+            </div>
+            <div class="ourTeam__teamInner__container">
+                <div class="ourTeam__teamInner">
+                    <img src="images/team-1.png" class="ourTeam__teamImage" alt="">
+                    <p class="ourTeam__teamName">Xiaoying Riley</p>
+                    <p class="ourTeam__teamPosition">Full-Stack Designer</p>
+                    <ul class="ourTeam__teamSocial">
+                        <li><a href="https://twitter.com/3rdwave_themes" target="_blank"><img src="images/social/x-icon.png"
+                                                                                              class="ourTeam__teamSocialImage" alt="twitter"></a></li>
+                        <li><a href="https://www.facebook.com/3rdwavethemes/" target="_blank"><img src="images/social/facebook-icon.png"
+                                                                                                   class="ourTeam__teamSocialImage" alt="facebook"></a></li>
+                        <li><a href="https://github.com/xriley" target="_blank"><img src="images/social/github-icon.png"
+                                                                                     class="ourTeam__teamSocialImage" alt="github"></a></li>
+                        <li><a href="https://dribbble.com/Xiaoying" target="_blank"><img src="images/social/dribbble-icon.png"
+                                                                                         class="ourTeam__teamSocialImage" alt="dribble"></a></li>
+                        <li><a href="https://uk.linkedin.com/in/xiaoying" target="_blank"><img src="images/social/linkedin-icon.png"
+                                                                                               class="ourTeam__teamSocialImage" alt="linkedin"></a></li>
+                    </ul>
+                    <p class="ourTeam__teamInner__text">Xiaoying is the UX/UI designer behind AppKit.<br>She loves designing and making Bootstrap<br>themes/templates
+                        for developers and startups.<br>You can find her sharing useful UX and webdev<br>related content on
+                        <a href="https://twitter.com/3rdwave_themes" target="_blank">
+                            Twitter</a> and <a href="https://www.facebook.com/3rdwavethemes/" target="_blank">
+                            Facebook</a>.<br>Follow her if you like what she does!</p>
+                </div>
+
+                <div class="ourTeam__teamInner">
+                    <img src="images/team-2.png" class="ourTeam__teamImage" alt="">
+                    <p class="ourTeam__teamName">Tomasz Najdek</p>
+                    <p class="ourTeam__teamPosition">Full-Stack Developer</p>
+                    <ul class="ourTeam__teamSocial">
+                        <li><a href="http://twitter.com/tnajdek" target="_blank"><img src="images/social/x-icon.png"
+                                                                                      class="ourTeam__teamSocialImage" alt="twitter"></a></li>
+                        <li><a href="https://www.doppnet.com/" target="_blank"><img src="images/social/internet-icon.png"
+                                                                                    class="ourTeam__teamSocialImage" alt="doppnet"></a></li>
+                        <li><a href="https://github.com/tnajdek" target="_blank"><img src="images/social/github-icon.png"
+                                                                                      class="ourTeam__teamSocialImage" alt="github"></a></li>
+                    </ul>
+                    <p class="ourTeam__teamInner__text">Tom takes care of everything on the<br>programming end making the
+                        interface rich<br>and flexible. He is a full-stack developer<br>specialising in building large,
+                        scalable and user-<br>friendly web apps. Follow him on
+                        <a href="https://twitter.com/tnajdek" target="_blank">Twitter</a> for<br>fresh developer
+                        tips and check out his<a href="https://github.com/tnajdek" target="_blank">
+                            Github</a><br>for useful open-source tools.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    --------------------------pricing-->
+    <div class="pricing__container">
+        <div class="pricing__section">
+            <div class="pricing__header">
+                <h2 class="pricing__title">Pricing</h2>
+                <p class="pricing__intro">AppKit's future updates are 100% FREE for existing customers</p>
+            </div>
+
+
+
+            <div class="pricing__block">
+                <!--                перывый блок-->
+                <div class="pricing__item">
+                    <div class="pricing__item__inner block_1">
+                        <h3 class="pricing__item__hidden">Single Application</h3>
+                        <div class="pricing__item__figure"><span>20</span></div>
+                        <div class="price__desc">
+                            <p>Restricted to a single<br>installation...</p>
+                            <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank">
+                                License Details</a>
+                        </div>
+
+                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm"
+                           target="_blank" class="pricing__item__button blockButton1">Buy Now</a>
+                    </div>
+                </div>
+                    <!--                второй блок-->
+                <div class="pricing__item">
+                    <div class="pricing__item__inner block_2">
+                        <h3 class="pricing__item__hidden">Multiple Applications</h3>
+                        <div class="pricing__item__figure"><span>80</span></div>
+                        <div class="price__desc">
+                            <p>May extend to multiple<br>installations...</p>
+                            <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank">
+                                License Details</a>
+                        </div>
+
+                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm"
+                           target="_blank" class="pricing__item__button blockButton2">Buy Now</a>
+                    </div>
+                </div>
+                    <!--                третий блок-->
+                <div class="pricing__item">
+                    <div class="pricing__item__inner block_3">
+                        <h3 class="pricing__item__hidden">Extended</h3>
+                        <div class="pricing__item__figure"><span>1200</span></div>
+                        <div class="price__desc">
+                            <p>May license, sublicense,<br>redistribute, or resell the item...</p>
+                            <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm" target="_blank">
+                                License Details</a>
+                        </div>
+
+                        <a href="https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm"
+                           target="_blank" class="pricing__item__button blockButton3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </main>
 
+
+
 <script src="js/scroll_header.js"></script>
+<script src="js/feature.js"></script>
+<script src="js/ourTeam.js"></script>
 </body>
 </html>

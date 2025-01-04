@@ -13,7 +13,10 @@ const header__navbar = document.querySelector(".header__navbar");
 // элементы navbar
 const navbar_link = document.querySelectorAll(".navbar_link");
 const header__logo = document.querySelector(".header__logo p");
-const header__logoBefore = document.querySelector(".header__logo>p::before");
+
+// иконка navbar
+const header__icon = document.querySelector(".header__icon");
+const header__icon_img = document.querySelector(".header__icon img");
 
 
 function changeContent1() {
@@ -22,6 +25,7 @@ function changeContent1() {
     header__text.innerHTML = "It helps developers to build beautiful and user-friendly web apps quickly and easily!";
     container__leftButton.innerHTML = "Get started";
     container__leftButton.style.width = "153px"
+    container__leftButton.href = "https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm";
     header__image.style.backgroundImage = `url(${"../images/hero-1.jpg"})`;
     // header__image.style.transitionDuration = ".7s"
     header__scrollButton1.style.backgroundColor = "#40babd";
@@ -34,6 +38,7 @@ function changeContent2() {
     header__text.innerHTML = "AppKit also comes with an Angular JS version. It empowers developers to create UI components with very little code. Feeding data into AppKit directives is quick and easy.";
     container__leftButton.innerHTML = "Find out more";
     container__leftButton.style.width = "174px"
+    container__leftButton.href = "https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm";
     header__image.style.backgroundImage = `url(${"../images/hero-2.jpg"})`;
     // header__image.style.transitionDuration = ".7s"
     header__scrollButton1.style.backgroundColor = "#ffffff66";
@@ -46,6 +51,7 @@ function changeContent3() {
     header__text.innerHTML = "Get AppKit today and it will supercharge your development. It's a must-have for any developers who are serious about building great products!";
     container__leftButton.innerHTML = "Try it now";
     container__leftButton.style.width = "142px";
+    container__leftButton.href = "https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm";
     header__image.style.backgroundImage = `url(${"../images/hero-3.jpg"})`;
     // header__image.style.transitionDuration = ".7s"
     header__scrollButton1.style.backgroundColor = "#ffffff66";
@@ -65,18 +71,36 @@ function changeColorNavbarLink(){
         let keysNavbarText = 0;
         for (let i of navbar_link){
             navbar_link[keysNavbarText].style.color = "#A2A6AF";
+            header__icon.style.backgroundColor = "#40BABD";
+
+            header__icon.style.borderRadius = "100%";
+            header__icon.style.width = "40px";
+            header__icon.style.height = "40px";
+            header__icon_img.style.width = "20px";
+            header__icon_img.style.height = "20px";
+
+
             keysNavbarText++;
         }
         header__logo.style.color = "#494D55";
         header__navbar.style.backgroundColor = "#FFFFFF";
+        header__navbar.style.boxShadow = "0 0 5px 0 grey";
     }else{
         let keysNavbarText = 0;
         for (let i of navbar_link){
             navbar_link[keysNavbarText].style.color = "#FFFFFFA6";
-            header__logo.style.color = "#FFFFFF";
+            header__icon.style.backgroundColor = "";
+
+            header__icon.style.borderRadius = "";
+            header__icon.style.width = "";
+            header__icon.style.height = "";
+            header__icon_img.style.width = "";
+            header__icon_img.style.height = "";
             keysNavbarText++;
         }
+        header__logo.style.color = "#FFFFFF";
         header__navbar.style.backgroundColor = "";
+        header__navbar.style.boxShadow = "";
     }
 }
 
