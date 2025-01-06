@@ -738,6 +738,7 @@ body{
     width: 133px;
     height: 46px;
     font-size: 16px;
+    font-weight: bold;
     font-family: "Open Sans", Arial, sans-serif;
     color: #FFFFFF;
     border-radius: 5px;
@@ -753,11 +754,111 @@ body{
 
 
 
+.contact__container{
+    width: 100%;
+    height: 420px;
+    background-color: #494D55;
+    padding: 90px 0;
+    box-sizing: border-box;
+    background-image: url("../images/map.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.contact__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+    height: 240px;
+    color: white;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.contact__title{
+    margin-bottom: 30px;
+    font-size: 36px;
+    text-align: center;
+}
 
+.contact__intro{
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
 
+.contact__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 162px;
+    height: 46px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #40BABD;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    color: white;
+}
 
+.contact__button:hover{
+    background-color: #3AA7AA;
+}
+
+.contact__button:active{
+    background-color: #204D74;
+    border-style: solid;
+    border-color: #102D45;
+    border-width: 2px;
+}
+
+.footer{
+    width: 100%;
+ }
+
+.footer__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #26282c;
+}
+
+.footer__section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    height: 20px;
+}
+
+.footer__copyright{
+    color: #ffffff99;
+    font-size: 12px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.footer__copyright span:after{
+    content: "\2665";
+    color: hotpink;
+    font-size: 16px;
+}
+
+.footer__copyright a{
+    text-decoration: none;
+    color: #40BABD;
+}
+
+.footer__copyright a:hover{
+    text-decoration: underline;
+}
 
 
 
